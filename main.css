@@ -31,12 +31,12 @@ body.blackScreen {
 }
 
 .zodiacBtn {
-    margin: 0 10px;
+    margin: 0 0px;
     height: 80px;
     width: 80px;
     border: 0;
     background-color: transparent;
-    background-image: url('images/aquarius.jpg');
+    background-image: url('images/keys/aquarius.png');
     background-size: cover;
     cursor: pointer;
 }
@@ -46,45 +46,45 @@ body.blackScreen {
 }
 
 #pisces {
-    background-image: url('images/pieces.jpg');
+    background-image: url('images/keys/pisces.png');
 }
 
 #aries {
-    background-image: url('images/aries.jpg');
+    background-image: url('images/keys/aries.png');
 }
 
 #taurus {
-    background-image: url('images/taurus.jpg');
+    background-image: url('images/keys/taurus.png');
 }
 
 #gemini {
-    background-image: url('images/gemini.jpg');
+    background-image: url('images/keys/gemini.png');
 }
 
 #cancer {
-    background-image: url('images/cancer.jpg');
+    background-image: url('images/keys/cancer.png');
 }
 
 #leo {
-    background-image: url('images/leo.jpg');
+    background-image: url('images/keys/leo.png');
 }
 
 #virgo {
-    background-image: url('images/virgo.jpg');
+    background-image: url('images/keys/virgo.png');
 }
 
 #libra {
-    background-image: url('images/libra.jpg');
+    background-image: url('images/keys/libra.png');
 }
 
 #scorpio {
-    background-image: url('images/scorpio.jpg');
+    background-image: url('images/keys/scorpio.png');
 }
 
 #sagittarius {
-    background-image: url('images/sagittarius.jpg');
+    background-image: url('images/keys/sagittarius.png');
 }
 
 #capricorn {
-    background-image: url('images/capricorn.jpg');
+    background-image: url('images/keys/capricorn.png');
 }

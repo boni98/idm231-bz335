@@ -7,22 +7,29 @@
     <title>Zodiac</title>
     <link rel="stylesheet" href="main.css">
 </head>
-<body>
+<body class="blackScreen" onload="fade2Content();">
     <div id="wrapper">
-        <div id="top"><h1>Hello</h1></div>
+        <div id="information">
+            <p><input id="name" type="text" placeholder="First Name"></p>
+            <p><input id="bday" type="date"></p>
+            <p><button id="submit">Submit</button></p>
+        </div>
+        <div>
+            <img id="display" src="images/all.jpg" alt="all zodiacs"/>
+          </div>
         <div id="middle">
-            <button id="aquarius">Aquarius</button>
-            <button id="pisces">Pisces</button>
-            <button id="aries">Aries</button>
-            <button id="taurus">Taurus</button>
-            <button id="gemini">Gemini</button>
-            <button id="cancer">Cancer</button>
-            <button id="leo">Leo</button>
-            <button id="virgo">Virgo</button>
-            <button id="libra">Libra</button>
-            <button id="scorpio">Scorpio</button>
-            <button id="sagittarius">Sagittarius</button>
-            <button id="capricorn">Capricorn</button>
+            <button class="zodiacBtn" id="aquarius">Aquarius</button>
+            <button class="zodiacBtn" id="pisces">Pisces</button>
+            <button class="zodiacBtn" id="aries">Aries</button>
+            <button class="zodiacBtn" id="taurus">Taurus</button>
+            <button class="zodiacBtn" id="gemini">Gemini</button>
+            <button class="zodiacBtn" id="cancer">Cancer</button>
+            <button class="zodiacBtn" id="leo">Leo</button>
+            <button class="zodiacBtn" id="virgo">Virgo</button>
+            <button class="zodiacBtn" id="libra">Libra</button>
+            <button class="zodiacBtn" id="scorpio">Scorpio</button>
+            <button class="zodiacBtn" id="sagittarius">Sagittarius</button>
+            <button class="zodiacBtn" id="capricorn">Capricorn</button>
         </div>
         <div class="bottom"></div>
     </div>

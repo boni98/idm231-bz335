@@ -1,4 +1,6 @@
 const displayObj = document.getElementById('display');
+const descriptionbj = document.getElementById('description');
+
 const aquariusBtn = document.getElementById('aquarius');
 const piscesBtn = document.getElementById('pisces');
 const ariesBtn = document.getElementById('aries');
@@ -75,15 +77,20 @@ function userPicked(zodiacBtn) {
             console.log('aquarius was clicked');
             displayObj.src = 'images/aquarius.jpg';
             displayObj.classList.add('visible');
-            zInstrument.innerHTML = "You are a trumpet!";
-            zDescription.innerHTML = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec finibus tortor sit amet sem pellentesque posuere."
-            modal.hidden = !modal.hidden;
+
+            descriptionbj.innerHTML = "aquarius";
+            //zInstrument.innerHTML = "You are a trumpet!";
+            //zDescription.innerHTML = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec finibus tortor sit amet sem pellentesque posuere."
+            //modal.hidden = !modal.hidden;
         break;
         case 'pisces':
             speakers.src = `sounds/pisces.mp3`;
             speakers.play();
             console.log('pisces was clicked');
             displayObj.src = 'images/pisces.jpg';
+
+            descriptionbj.innerHTML = "pisces";
+
         break;
         case 'aries':
             speakers.src = `sounds/aries.mp3`;
@@ -154,7 +161,7 @@ function userPicked(zodiacBtn) {
 
 // add Event Listener
 userSubmitBtn.addEventListener('click', function() {
-    //console.log('Submit button clicked!');
+    console.log('Submit button clicked!');
 
     const usersFirstName = document.getElementById('name').value;
     //console.log('Users name is: ' + usersFirstName);
@@ -170,29 +177,29 @@ userSubmitBtn.addEventListener('click', function() {
 
     // Zodiac Algorithm
     if ((whichMonth == 12 && whichDayOfMonth >= 22) || (whichMonth == 1 && whichDayOfMonth <= 19)) {
-        AstroSign = "Cap";
+        AstroSign = "capricorn";
     } else if ((whichMonth == 11 && whichDayOfMonth >= 22) || (whichMonth == 12 && whichDayOfMonth <= 21)) {
-        AstroSign = "Sag";
+        AstroSign = "sagittarius";
     } else if ((whichMonth == 10 && whichDayOfMonth >= 24) || (whichMonth == 11 && whichDayOfMonth <= 21)) {
-        AstroSign = "Sco";
+        AstroSign = "scorpio";
     } else if ((whichMonth == 9 && whichDayOfMonth >= 23) || (whichMonth == 10 && whichDayOfMonth <= 23)) {
-        AstroSign = "Lib";
+        AstroSign = "libra";
     } else if ((whichMonth == 8 && whichDayOfMonth >= 23) || (whichMonth == 9 && whichDayOfMonth <= 22)) {
-        AstroSign = "Vir";
+        AstroSign = "virgo";
     } else if ((whichMonth == 7 && whichDayOfMonth >= 23) || (whichMonth == 8 && whichDayOfMonth <= 22)) {
-        AstroSign = "Leo";
+        AstroSign = "leo";
     } else if ((whichMonth == 6 && whichDayOfMonth >= 22) || (whichMonth == 7 && whichDayOfMonth <= 22)) {
-        AstroSign = "Can";
+        AstroSign = "cancer";
     } else if ((whichMonth == 5 && whichDayOfMonth >= 21) || (whichMonth == 6 && whichDayOfMonth <= 21)) {
-        AstroSign = "Gem";
+        AstroSign = "gemini";
     } else if ((whichMonth == 4 && whichDayOfMonth >= 20) || (whichMonth == 5 && whichDayOfMonth <= 20)) {
-        AstroSign = "Tau";
+        AstroSign = "taurus";
     } else if ((whichMonth == 3 && whichDayOfMonth >= 21) || (whichMonth == 4 && whichDayOfMonth <= 19)) {
-        AstroSign = "Ari";
+        AstroSign = "aries";
     } else if ((whichMonth == 2 && whichDayOfMonth >= 19) || (whichMonth == 3 && whichDayOfMonth <= 20)) {
-        AstroSign = "Pis";
+        AstroSign = "pisces";
     } else if ((whichMonth == 1 && whichDayOfMonth >= 20) || (whichMonth == 2 && whichDayOfMonth <= 18)) {
-        AstroSign = "Aqu";
+        AstroSign = "aquarius";
     }
     
     userPicked(AstroSign);

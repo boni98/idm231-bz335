@@ -11,7 +11,7 @@
     <div id="wrapper">
         <div id="information">
             <p><input id="name" type="text" placeholder="First Name"></p>
-            <p><input id="bday" type="date"></p>
+            <p><input id="birthday" type="date"></p>
             <p><button id="submit">Submit</button></p>
         </div>
         <div>
@@ -31,7 +31,17 @@
             <button class="zodiacBtn" id="sagittarius"></button>
             <button class="zodiacBtn" id="capricorn"></button>
         </div>
-        <div class="bottom"></div>
+        <div id="modal" class="modal" hidden>
+            <div class="modal-body">
+              <div class="modal-content">
+                <div><p><span id="zInstrument">You are an instrument!</span> <span id="zDate">###</span></p></div>
+                <img id="zImage" src="images/all.jpg" alt="all zodiacs"/>
+                <p id="zDescription">This is a description.</p>
+                <button id="btn-modal-close" class="toggle-modal">Close</button>
+              </div>
+            </div>
+            <div class="blanket"></div>
+        </div>
     </div>
     <audio id="speakers"></audio>
     <script src="main.js"></script>

@@ -1,5 +1,7 @@
 const displayObj = document.getElementById('display');
-const descriptionbj = document.getElementById('description');
+const titleObj = document.getElementById('title');
+const dateObj = document.getElementById('date');
+const descriptionObj = document.getElementById('description');
 
 const aquariusBtn = document.getElementById('aquarius');
 const piscesBtn = document.getElementById('pisces');
@@ -77,80 +79,108 @@ function userPicked(zodiacBtn) {
             console.log('aquarius was clicked');
             displayObj.src = 'images/aquarius.jpg';
             displayObj.classList.add('visible');
-
-            descriptionbj.innerHTML = "aquarius";
-            //zInstrument.innerHTML = "You are a trumpet!";
-            //zDescription.innerHTML = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec finibus tortor sit amet sem pellentesque posuere."
-            //modal.hidden = !modal.hidden;
+            titleObj.innerHTML = "Aquarius \"The Water Bearer\"";
+            dateObj.innerHTML = "January 20 - February 18"
+            descriptionObj.innerHTML = "aquarius";
         break;
         case 'pisces':
             speakers.src = `sounds/pisces.mp3`;
             speakers.play();
             console.log('pisces was clicked');
             displayObj.src = 'images/pisces.jpg';
-
-            descriptionbj.innerHTML = "pisces";
-
+            titleObj.innerHTML = "Pisces \"The Paired Fish\"";
+            dateObj.innerHTML = "February 19 - March 20"
+            descriptionObj.innerHTML = "aquarius";
         break;
         case 'aries':
             speakers.src = `sounds/aries.mp3`;
             speakers.play();
             console.log('aries was clicked');
             displayObj.src = 'images/aries.jpg';
+            titleObj.innerHTML = "Aries \"The Ram\"";
+            dateObj.innerHTML = "March 21 - April 19"
+            descriptionObj.innerHTML = "aquarius";
         break;
         case 'taurus':
             speakers.src = `sounds/taurus.mp3`;
             speakers.play();
             console.log('taurus was clicked');
             displayObj.src = 'images/taurus.jpg';
+            titleObj.innerHTML = "Taurus \"The Golden Bull\"";
+            dateObj.innerHTML = "April 20 - May 20"
+            descriptionObj.innerHTML = "aquarius";
         break;
         case 'gemini':
             speakers.src = `sounds/gemini.mp3`;
             speakers.play();
             console.log('gemini was clicked');
             displayObj.src = 'images/gemini.jpg';
+            titleObj.innerHTML = "Gemini \"The Twins\"";
+            dateObj.innerHTML = "May 21 - June 21"
+            descriptionObj.innerHTML = "aquarius";
         break;
         case 'cancer':
             speakers.src = `sounds/cancer.mp3`;
             speakers.play();
             console.log('cancer was clicked');
             displayObj.src = 'images/cancer.jpg';
+            titleObj.innerHTML = "Cancer \"The Great Crab\"";
+            dateObj.innerHTML = "June 22 - July 22"
+            descriptionObj.innerHTML = "aquarius";
         break;
         case 'leo':
             speakers.src = `sounds/leo.mp3`;
             speakers.play();
             console.log('leo was clicked');
             displayObj.src = 'images/leo.jpg';
+            titleObj.innerHTML = "Leo \"The Lion\"";
+            dateObj.innerHTML = "July 23 - August 22"
+            descriptionObj.innerHTML = "aquarius";
         break;
         case 'virgo':
             speakers.src = `sounds/virgo.mp3`;
             speakers.play();
             console.log('virgo was clicked');
             displayObj.src = 'images/virgo.jpg';
+            titleObj.innerHTML = "Virgo \"The Maiden\"";
+            dateObj.innerHTML = "August 24 - September 22"
+            descriptionObj.innerHTML = "aquarius";
         break;
         case 'libra':
             speakers.src = `sounds/libra.mp3`;
             speakers.play();
             console.log('libra was clicked');
             displayObj.src = 'images/libra.jpg';
+            titleObj.innerHTML = "Libra \"The Heavenly Scales\"";
+            dateObj.innerHTML = "September 23 - October 23"
+            descriptionObj.innerHTML = "aquarius";
         break;
         case 'scorpio':
             speakers.src = `sounds/scorpio.mp3`;
             speakers.play();
             console.log('scorpio was clicked');
             displayObj.src = 'images/scorpio.jpg';
+            titleObj.innerHTML = "Scorpio \"The Scorpion\"";
+            dateObj.innerHTML = "October 24 - November 21"
+            descriptionObj.innerHTML = "aquarius";
         break;
         case 'sagittarius':
             speakers.src = `sounds/sagittarius.mp3`;
             speakers.play();
             console.log('sagittarius was clicked');
             displayObj.src = 'images/sagittarius.jpg';
+            titleObj.innerHTML = "Sagittarius \"The Archer\"";
+            dateObj.innerHTML = "November 22 - December 21"
+            descriptionObj.innerHTML = "aquarius";
         break;
         case 'capricorn':
             speakers.src = `sounds/capricorn.mp3`;
             speakers.play();
             console.log('capricorn was clicked');
             displayObj.src = 'images/capricorn.jpg';
+            titleObj.innerHTML = "Capricorn \"The Goat\"";
+            dateObj.innerHTML = "December 22 - January 19"
+            descriptionObj.innerHTML = "aquarius";
         break;
         default:
             console.log('A button was clicked!');

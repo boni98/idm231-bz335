@@ -135,7 +135,7 @@ body.blackScreen {
 .zodiacBtn {
     height: 65px;
     width: 180px;
-    margin: 0 10px;
+    margin: 0 16px;
     border: 0;
     background-color: transparent;
     background-image: url('images/keys/aquarius.png');
@@ -144,7 +144,7 @@ body.blackScreen {
 }
 
 .zodiacBtn:hover {
-   transform: rotate(10deg);
+   transform: rotate(5deg);
 }
 
 #pisces {

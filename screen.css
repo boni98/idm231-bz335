@@ -9,7 +9,6 @@ html {
 	box-sizing: inherit;
 }
 
-/* Add this last */
 [hidden] {
 	display: none !important;
 }

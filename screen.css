@@ -46,7 +46,7 @@ html {
 	background-color: #fff;
 	border: 1rem solid skyblue;
 
-	height: 80vh;
+	height: 90vh;
 	max-width: 50vw;
 
 	position: relative;
@@ -61,4 +61,24 @@ html {
 	font-weight: 300;
 	text-align: center;
 
+}
+
+.modal #zodiacs {
+    max-width: 100px;
+}
+
+/* Modal Close Button */
+#btn-modal-close {
+    border: none;
+    background-color: #63a7e8;
+    font-size: 1em;
+    font-weight: 300;
+    color: white;
+    margin: 0 auto;
+    border-radius: 5em;
+    padding: 10px 15px;
+}
+
+#btn-modal-close:hover {
+    background-color: #4d9ae3;
 }

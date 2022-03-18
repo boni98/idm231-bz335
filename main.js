@@ -16,6 +16,7 @@ function fade2Content() {
     document.body.classList.remove("blackScreen");
 }
 
+//Zodiac Buttons Event Listener
 aquariusBtn.addEventListener('click', function() {
     userPicked('aquarius');
 });
@@ -198,14 +199,11 @@ function userPicked(zodiacBtn) {
     }
 }
 
-    const userSubmitBtn = document.getElementById('submit');
+    const form = document.getElementById('form');
 
 // add Event Listener
-userSubmitBtn.addEventListener('click', function() {
+form.addEventListener('submit', (event) => {
     console.log('Submit button clicked!');
-
-    const usersFirstName = document.getElementById('name').value;
-    //console.log('Users name is: ' + usersFirstName);
 
     const userBday = new Date(document.getElementById('birthday').value);
     //console.log(userBday);
@@ -244,6 +242,7 @@ userSubmitBtn.addEventListener('click', function() {
     }
     
     userPicked(AstroSign);
+    event.preventDefault();
 });
 
 // Modal Functionality

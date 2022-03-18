@@ -5,12 +5,9 @@
     object-fit: cover;
 }
 
-input {
-    padding: 10px;
-    border-width: 2px;
-    border-style: inset;
-    border-radius: 5px;
-    background-color: aliceblue;
+#display {
+    display: flex;
+    margin: 20px auto;
 }
 
 body {
@@ -25,11 +22,22 @@ body.blackScreen {
     transition: none;
 }
 
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .ftLogo {
     width: 50%;
     position: relative;
 }
 
+#middle {
+    margin: 0 auto;
+}
+
+/* Help Button Hover*/
 .help {
     width: 105px;
     margin: 0 auto;
@@ -81,16 +89,19 @@ body.blackScreen {
     margin: 0;
 }
 
-.header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
+/* Form */
 #form {
     display: flex;
     justify-content: center;
     flex-direction: column;
+}
+
+input {
+    padding: 10px;
+    border-width: 2px;
+    border-style: inset;
+    border-radius: 5px;
+    background-color: aliceblue;
 }
 
 #submit {
@@ -102,24 +113,10 @@ body.blackScreen {
     margin: 0 auto;
     border-radius: 5em;
     padding: 12px 30px;
-    -webkit-appearance: none;
 }
 
 #submit:hover {
     background-color: #4d9ae3;
-}
-
-#display {
-    display: flex;
-    margin: 20px auto;
-}
-
-#middle {
-    margin: 0 auto;
-}
-
-.modal #zodiacs {
-    max-width: 100px;
 }
 
 #userSubmit {
@@ -132,6 +129,7 @@ body.blackScreen {
     -webkit-appearance: none;
 }
 
+/* Zodiac Keys Button */
 .zodiacBtn {
     height: 65px;
     width: 180px;

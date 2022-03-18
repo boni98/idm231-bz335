@@ -22,14 +22,14 @@
                         <p><strong>2.</strong> Click on the blue "Summon" button to summon your spirit!</p>
                     </div>
             </div>
-            <form action="index.html" id="form" method="post" _lpchecked="1">
+            <form action="index.html" id="form" _lpchecked="1" >
                 <br>
                 <div>
                     <label for="birthday">Enter Your Birthday:</label>
                     <input id="birthday" type="date" required>
                 </div>
                 <br>
-                <button id="submit">Summon</button>
+                <button type="submit" id="submit">Summon</button>
             </form>
         </div>
         <div>
@@ -52,9 +52,9 @@
         <div id="modal" class="modal" hidden>
             <div class="modal-body">
               <div class="modal-content">
-                <div><p><span id="title">You are Zodiac!</span></p></div>
+                <div><h1><span id="title">You are Zodiac!</span></h1></div>
                 <img id="zodiac" src="images/all.jpg" alt="All fairy tail zodiacs" class="imagesSize"/>
-                <p><span id="date">###</span></p>
+                <p><i><span id="date">###</span></i></p>
                 <p id="description">This is a description.</p>
                 <button id="btn-modal-close" class="toggle-modal">Close</button>
               </div>

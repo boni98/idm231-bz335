@@ -151,7 +151,8 @@ function userPicked(zodiacBtn) {
             titleObj.innerHTML = "Virgo \"The Maiden\"";
             dateObj.innerHTML = "August 24 - September 22"
             descriptionObj.innerHTML = "Virgo takes the form of a maid with shackles around her wrists, short, pink hair, and blue eyes. She wears a typical maid outfit, consisting of a black under coat and a white, frilled-trim apron and white knee-length socks with black Mary Jane shoes. Virgo exhibits great prowess in Earth Magic, with her form of Earth Magic revolving around the creation of holes. She is able to create holes to immobilize opponents and use as entryways to travel underground with her Diver. Virgo has a tendency to ask whether she should be punished after she has done something, regardless of if it was good or bad, indicating that she's a masochist.";
-        break;
+            modal.hidden = !modal.hidden;
+            break;
         case 'libra':
             speakers.src = `sounds/libra.mp3`;
             speakers.play();

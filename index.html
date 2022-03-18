@@ -18,18 +18,17 @@
                 <div class="question">Need Help?</div>
                     <div class="popup">
                         <h3>How do I summon my Celestial Spirit?</h3>
-                        <p><strong>1.</strong> Type your name in the textbox under "Enter Your Name."</p>
-                        <p><strong>2.</strong> Input your birthday in the textbox under "Enter Your Birthday."</p>
-                        <p><strong>3.</strong> Click on the blue "Summon" button to summon your spirit!</p>
+                        <p><strong>1.</strong> Input your birthday in the textbox under "Enter Your Birthday."</p>
+                        <p><strong>2.</strong> Click on the blue "Summon" button to summon your spirit!</p>
                     </div>
             </div>
             <form action="index.html" id="form" method="post" _lpchecked="1">
                 <br>
-                <label for="name">Enter Your Name:</label>
-                <input id="name" type="text" placeholder="Name" required>
+                <div>
+                    <label for="birthday">Enter Your Birthday:</label>
+                    <input id="birthday" type="date" required>
+                </div>
                 <br>
-                <label for="birthday">Enter Your Birthday:</label>
-                <input id="birthday" type="date" required>
                 <button id="submit">Summon</button>
             </form>
         </div>
@@ -54,7 +53,7 @@
             <div class="modal-body">
               <div class="modal-content">
                 <div><p><span id="title">You are Zodiac!</span></p></div>
-                <img id="zodiac" src="images/all.jpg" alt="All fairy tail zodiacs"/>
+                <img id="zodiac" src="images/all.jpg" alt="All fairy tail zodiacs" class="imagesSize"/>
                 <p><span id="date">###</span></p>
                 <p id="description">This is a description.</p>
                 <button id="btn-modal-close" class="toggle-modal">Close</button>

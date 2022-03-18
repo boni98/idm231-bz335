@@ -5,16 +5,6 @@
     object-fit: cover;
 }
 
-.zodiacBorder{
-    padding: 25px 30px;
-    margin: 0 auto;
-    border-radius: 5em;
-    box-shadow: 0 6px #e3e3e3;
-    background-color: white;
-    background-size: 30px 30px;
-    background-position: 0 0, 15px 15px;  
-}
-
 input {
     padding: 10px;
     border-width: 2px;
@@ -72,13 +62,13 @@ body.blackScreen {
   
 .help:hover .popup {
     opacity: 1;
-    height: 160px;
+    height: 115px;
 }
   
 .help .popup h3 {
     margin: 0;
     padding: 10px 0 0 10px;
-    height: 30px;
+    height: 35px;
     background: #555;
     color: #fff;
     font-weight: 400;
@@ -97,6 +87,12 @@ body.blackScreen {
     align-items: center;
 }
 
+#form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
 #submit {
     border: none;
     background-color: #63a7e8;
@@ -111,16 +107,6 @@ body.blackScreen {
 
 #submit:hover {
     background-color: #4d9ae3;
-}
-
-#wrapper {
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto;
-    padding: 20px;
-    max-width: 1280px;
-    background-color: aquamarine;
-    margin: 10px auto;
 }
 
 #display {

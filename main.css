@@ -1,5 +1,11 @@
+.imagesSize{
+    width: 70%;
+    z-index: 0;    
+    height: auto;
+    object-fit: cover;
+}
 
-.texts{
+.zodiacBorder{
     padding: 25px 70px;
     margin: 0 auto;
     border-radius: 100px;
@@ -34,7 +40,6 @@ body.blackScreen {
 #display {
     display: flex;
     margin: 20px auto;
-    max-width: 700px;
 }
 
 #middle {

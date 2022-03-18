@@ -5,29 +5,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fairy Tail Zodiac</title>
+    <link rel="icon" href="images/logo.png">
     <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="screen.css">
 </head>
 <body class="blackScreen" onload="fade2Content();">
-    <div id="wrapper">
-        <div id="information">
-            <p><input id="name" type="text" placeholder="First Name"></p>
-            <p><input id="birthday" type="date"></p>
-            <p><button id="submit">Submit</button></p>
-        </div>
-        
-        
-            <div class="zodiacBorder">
-                <h3 id="title"></h3>
-                <img id="display" src="images/all.jpg" alt="all zodiacs" class="imagesSize"/>
-                <p id="date"></p>
-                <p id="description"></p>
+
+        <div class="header">
+            <img class="ftLogo" src="images/fairytailLogo.png" alt="Fairy Tail Logo">
+            <h1>Which Celestial Spirit Will You Summon?</h1>
+            <div class="help">
+                <div class="question">Need Help?</div>
+                    <div class="popup">
+                        <h3>How do I summon my Celestial Spirit?</h3>
+                        <p><strong>1.</strong> Type your name in the textbox under "Enter Your Name."</p>
+                        <p><strong>2.</strong> Input your birthday in the textbox under "Enter Your Birthday."</p>
+                        <p><strong>3.</strong> Click on the blue "Summon" button to summon your spirit!</p>
+                    </div>
             </div>
-
+            <form action="index.html" id="form" method="post" _lpchecked="1">
+                <br>
+                <label for="name">Enter Your Name:</label>
+                <input id="name" type="text" placeholder="Name" required>
+                <br>
+                <label for="birthday">Enter Your Birthday:</label>
+                <input id="birthday" type="date" required>
+                <button id="submit">Summon</button>
+            </form>
         </div>
-
         <div>
-            
-          </div>
+            <img id="display" src="images/all.jpg" alt="All fairy tail zodiacs"/>
+        </div>
         <div id="middle">
             <button class="zodiacBtn" id="aquarius"></button>
             <button class="zodiacBtn" id="pisces"></button>
@@ -45,15 +53,15 @@
         <div id="modal" class="modal" hidden>
             <div class="modal-body">
               <div class="modal-content">
-                <div><p><span id="zInstrument">You are an instrument!</span> <span id="zDate">###</span></p></div>
-                <img id="zImage" src="images/all.jpg" alt="all zodiacs"/>
-                <p id="zDescription">This is a description.</p>
+                <div><p><span id="title">You are an instrument!</span></p></div>
+                <img id="zodiac" src="images/all.jpg" alt="All fairy tail zodiacs"/>
+                <p><span id="date">###</span></p>
+                <p id="description">This is a description.</p>
                 <button id="btn-modal-close" class="toggle-modal">Close</button>
               </div>
             </div>
             <div class="blanket"></div>
         </div>
-    </div>
     <audio id="speakers"></audio>
     <script src="main.js"></script>
 </body>
